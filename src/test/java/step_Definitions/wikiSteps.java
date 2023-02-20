@@ -16,7 +16,7 @@ public WIKIPage lp;
 	
 	@Given("User is on wikipedia home page")
 	public void user_is_on_wikipedia_home_page() {
-		System.setProperty("webdriver.chrome.driver","C:\\Users\\sachi\\eclipse-workspace\\pushpaWiki\\Drivers\\chromedriver.exe");
+		System.setProperty("webdriver.chrome.driver",System.getProperty("user.dir")+"//Drivers//chromedriver.exe");
 	    
 		    driver=new ChromeDriver();
 		    lp=new WIKIPage(driver); 
